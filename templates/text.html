@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{page.name}}</title>
+</head>
+<body>
+<h3> {{page.name}}</h3>
+<button type="button"><a href="/audio?page={{page.name}}">播放小说</a></button>
+<div id="content">
+    {% for c in cont　%}
+    {{c}} <br/>
+    {% endfor %}
+</div>
+<br/>
+<button type="button"><a href="/text?page={{page.prev_page}}">上一章</a></button>
+<button type="button"><a href="/text?page={{page.next_page}}">下一章</a></button>
+
+</body>
+</html>

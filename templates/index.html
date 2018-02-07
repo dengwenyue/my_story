@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爬虫小说</title>
+</head>
+<body>
+<h2 style="text-align: center"> 欢迎来到我的小说 </h2>
+
+<h3> 当前小说有　</h3>
+
+<ul>
+    {% for book in books %}
+    <li><a href="/contents?uuid={{book.uuid}}">{{book.name}}</a></li>
+    {% endfor %}
+</ul>>
+
+</body>
+</html>
